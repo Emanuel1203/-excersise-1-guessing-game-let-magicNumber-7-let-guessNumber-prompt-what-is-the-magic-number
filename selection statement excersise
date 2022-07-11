@@ -1,0 +1,95 @@
+//excersise 1 guessing game
+let magicNumber = 7;
+
+let guessNumber = prompt("what is the magic number")
+
+if (guessNumber == magicNumber){
+  console.log("Congrats!!! You Have Guessed The Magic Number!!!")
+}else if (guessNumber>magicNumber){
+    console.log("Too High! Try Again")
+}else if (guessNumber<magicNumber){
+     console.log("Too Low! Try Again") 
+}
+
+//excersise 2: Birth season
+let birthMonth = prompt("Please Isert Your Birth Month")
+
+switch (birthMonth){
+case ("december","January","Febuary"):
+        console.log("Winter");
+        break;
+case("March","April","May"):
+        console.log("Spring");
+        break;
+case("June","July","August"):
+        console.log("Summer");
+        break:
+case("September","October","November"):
+        console.log("Fall");
+        break:
+default:
+    console.log("I Don't Recognize That Month...");                
+}
+ //Excersise 3
+
+ let typeId = "01";
+let colorId = "PU";
+let sizeId = "L";
+
+let type = "";
+let color = "";
+let size = "";
+
+switch(typeId){
+case "01";
+    type "Tank top";
+    break;
+case "02";
+    type "T-Shirt";
+    break;
+case "03";
+    type "Long Sleeve";
+    break;
+case "04";
+    type "Sweat Shirt";
+    break;
+default:
+    type "other"
+}
+
+switch(colorId){
+    case "BL";
+        type "Black";
+        break;
+    case "BL";
+        type "Blue";
+        break;
+    case "RD";
+        type "Red";
+        break;
+    case "PU";
+        type "Purple";
+        break;
+    default:
+        type "White"
+    }
+
+    switch(sizeId){
+        case "S";
+            type "Small";
+            break;
+        case "M";
+            type "Medium";
+            break;
+        case "L";
+            type "Large";
+            break;
+        case "XL";
+            type "Extra Large";
+            break;
+        default:
+            type "One Size Fits All"
+        }
+
+
+console.log(`Product: ${size} ${color} ${type}`);
